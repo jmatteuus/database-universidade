@@ -34,7 +34,6 @@ semestre INT NOT NULL,
 id_aluno INT,
 id_curso INT,
 PRIMARY KEY(id),
-
 FOREING KEY (id_aluno) REFERENCES alunos(cadastro),
 FOREING KEY (id_curso) REFERENCES cursos(idcurso)
 );
@@ -44,4 +43,4 @@ INSERT INTO alunos (nome, nascimento, sexo, endereco, matricula, email, numero) 
 ('João da Silva', '2000-05-15', 'M', 'Rua ABC, 123', true, 'joao.silva@example.com', '123456789');
 
 INSERT INTO cursos (nome, tipo, carga, preco) VALUES
-('Engenharia de Software', 'Bacharelado', 3800, 12000.00),
+('Engenharia de Software', 'Bacharelado', 3800, 12000.00);
