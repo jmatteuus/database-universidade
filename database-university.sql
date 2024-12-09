@@ -32,4 +32,7 @@ semestre INT NOT NULL,
 id_curso INT,
 id_aluno INT,
 PRIMARY KEY(id),
+
+FOREING KEY (id_aluno) REFERENCES alunos(cadastro),
+FOREING KEY (id_curso) REFERENCES cursos(idcurso)
 );
