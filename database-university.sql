@@ -34,8 +34,8 @@ CREATE TABLE IF NOT EXISTS alunos_cursos(
     id_aluno INT,
     id_curso INT,
     PRIMARY KEY(id),
-    FOREING KEY (id_aluno) REFERENCES alunos(cadastro),
-    FOREING KEY (id_curso) REFERENCES cursos(idcurso)
+    FOREIGN KEY (id_aluno) REFERENCES alunos(cadastro),
+    FOREIGN KEY (id_curso) REFERENCES cursos(idcurso)
 );
 
 
