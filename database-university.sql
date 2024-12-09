@@ -23,3 +23,10 @@ carga INT NOT NULL CHECK (preco >=0) COMMENT 'Carga horária em horas',
 preco DECIMAL (10,2) NOT NULL CHECK (preco >= 0),
 PRIMARY KEY(idcurso)
 );
+
+CREATE TABLE alunos_cursos(
+
+
+
+
+);
