@@ -40,8 +40,8 @@ FOREING KEY (id_curso) REFERENCES cursos(idcurso)
 );
 
 
-INSERT INTO alunos
-VALUES ('João da Silva', '2000-05-15', 'M', 'Rua ABC, 123', true, 'joao.silva@example.com', '123456789');
+INSERT INTO alunos (nome, nascimento, sexo, endereco, matricula, email, numero) VALUES
+('João da Silva', '2000-05-15', 'M', 'Rua ABC, 123', true, 'joao.silva@example.com', '123456789');
 
-INSERT INTO cursos
-VALUES ('Engenharia de Software', 'Bacharelado', 3800, 12000.00),
+INSERT INTO cursos (nome, tipo, carga, preco) VALUES
+('Engenharia de Software', 'Bacharelado', 3800, 12000.00),
