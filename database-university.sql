@@ -14,3 +14,12 @@ email VARCHAR(50) NOT NULL UNIQUE,
 numero VARCHAR(20) NOT NULL,
 PRIMARY KEY (cadastro)
 );
+
+CREATE TABLE cursos (
+idcurso INT NOT NULL AUTO_INCREMENT,
+nome VARCHAR(30) NOT NULL,
+tipo ENUM ('Bacharelado','Tecnólogo','Técnico','Licenciatura') NOT NULL,
+carga INT NOT NULL,
+preco DECIMAL (10,2) NOT NULL,
+PRIMARY KEY(idcurso)
+);
