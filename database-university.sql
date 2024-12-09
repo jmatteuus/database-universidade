@@ -1,8 +1,8 @@
-CREATE DATABASE universidade;
+CREATE DATABASE IF NOT EXISTS universidade;
 
 USE universidade;
 
-CREATE TABLE alunos (
+CREATE TABLE IF NOT EXISTS alunos (
 cadastro INT NOT NULL AUTO_INCREMENT,
 nome VARCHAR(40) NOT NULL,
 nascimento DATE NOT NULL,
@@ -15,7 +15,7 @@ numero VARCHAR(20) NOT NULL,
 PRIMARY KEY (cadastro)
 );
 
-CREATE TABLE cursos (
+CREATE TABLE IF NOT EXISTS cursos (
 idcurso INT NOT NULL AUTO_INCREMENT,
 nome VARCHAR(30) NOT NULL,
 tipo ENUM ('Bacharelado','Tecnólogo','Técnico','Licenciatura') NOT NULL COMMENT 'Tipo do curso',
@@ -24,13 +24,14 @@ preco DECIMAL (10,2) NOT NULL CHECK (preco >= 0),
 PRIMARY KEY(idcurso)
 );
 
-CREATE TABLE alunos_cursos(
+
+CREATE TABLE IF NOT EXISTS alunos_cursos(
 id INT NOT NULL AUTO_INCREMENT,
 data_inicio DATE NOT NULL,
 data_fim DATE NOT NULL,
 semestre INT NOT NULL,
-id_curso INT,
 id_aluno INT,
+id_curso INT,
 PRIMARY KEY(id),
 
 FOREING KEY (id_aluno) REFERENCES alunos(cadastro),
