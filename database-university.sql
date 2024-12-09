@@ -25,6 +25,7 @@ PRIMARY KEY(idcurso)
 );
 
 
+
 CREATE TABLE IF NOT EXISTS alunos_cursos(
 id INT NOT NULL AUTO_INCREMENT,
 data_inicio DATE NOT NULL,
@@ -37,3 +38,10 @@ PRIMARY KEY(id),
 FOREING KEY (id_aluno) REFERENCES alunos(cadastro),
 FOREING KEY (id_curso) REFERENCES cursos(idcurso)
 );
+
+
+INSERT INTO alunos
+VALUES ('João da Silva', '2000-05-15', 'M', 'Rua ABC, 123', true, 'joao.silva@example.com', '123456789');
+
+INSERT INTO cursos
+VALUES ('Engenharia de Software', 'Bacharelado', 3800, 12000.00),
