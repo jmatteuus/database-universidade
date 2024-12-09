@@ -13,4 +13,4 @@ matricula BOOLEAN NOT NULL COMMENT '1 = Ativo, 0 = Inativo',
 email VARCHAR(50) NOT NULL UNIQUE,
 numero VARCHAR(20) NOT NULL,
 PRIMARY KEY (cadastro)
-)
+);
