@@ -1,3 +1,5 @@
+# linguagem: sql
+
 CREATE DATABASE IF NOT EXISTS universidade;
 
 USE universidade;
