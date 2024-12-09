@@ -19,7 +19,7 @@ CREATE TABLE cursos (
 idcurso INT NOT NULL AUTO_INCREMENT,
 nome VARCHAR(30) NOT NULL,
 tipo ENUM ('Bacharelado','Tecnólogo','Técnico','Licenciatura') NOT NULL COMMENT 'Tipo do curso',
-carga INT NOT NULL,
+carga INT NOT NULL COMMENT 'Carga horária em horas',
 preco DECIMAL (10,2) NOT NULL CHECK (preco >= 0),
 PRIMARY KEY(idcurso)
 );
