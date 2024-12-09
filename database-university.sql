@@ -25,8 +25,11 @@ PRIMARY KEY(idcurso)
 );
 
 CREATE TABLE alunos_cursos(
-
-
-
-
+id INT NOT NULL AUTO_INCREMENT,
+data_inicio DATE NOT NULL,
+data_fim DATE NOT NULL,
+semestre INT NOT NULL,
+id_curso INT,
+id_aluno INT,
+PRIMARY KEY(id),
 );
